@@ -1,6 +1,12 @@
-
-
-
+let x = 0;
+const intervalId = setInterval(function (a, b) {
+  console.log(a+x);
+  if ((a+x) === b) {
+    x = 0;
+    clearInterval(intervalId);
+  };
+  x++;
+}, 1000, 5, 15);
 
 /* Напишите функцию, которая принимает два числа. Каждую секунду необходимо выводить в консоль,
 начиная от первого и заканчивая вторым. Используйте setInterval.

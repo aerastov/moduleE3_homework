@@ -1,4 +1,10 @@
+const x_Power_n = (a, b) => {
+  const result = Math.pow(a, b);
+  return result;
+};
 
+let result = x_Power_n(8, 2);
+console.log(result);
 
 /* Напишите функцию, которая принимает два натуральных числа x и n и возвращает x в степени n.
 Иначе говоря, умножает x на себя n раз и возвращает результат.
